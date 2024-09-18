@@ -1,0 +1,32 @@
+<header>
+  <nav>
+    <h1>Another page</h1>
+  </nav>
+</header>
+
+<p>
+  Routing seems to work fine :D
+</p>
+
+<div id="another"></div>
+
+<button onclick="loadSomeMoreData()">Load some data</button>
+
+<script type="module">
+  function wait(ms) {
+    return new Promise((r) => {
+      setTimeout(r, ms);
+    });
+  }
+
+  window.loadSomeMoreData = async () => {
+    const wrapper = document.getElementById("another");
+    for (let i = 0; i < 10; i++) {
+      wrapper.innerHTML += `<a-component src="/_/components/reusable.html" title="Element ${i}"></a-component>`;
+      await wait(500);
+    }
+  };
+
+  window.loadSomeMoreData();
+</script>
+
