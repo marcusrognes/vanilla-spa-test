@@ -68,6 +68,8 @@ script tags also work
 
 Components can be nested, they can pass props to eachother and they rerender when props change.
 
+Everything is lazy loaded
+
 ## This site
 
 [index.html](index.html) has the routes and imports to js and css files.
