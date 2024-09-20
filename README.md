@@ -1,5 +1,7 @@
 # Vanilla SPA Test
 
+## [Test site](https://spa-test.rognes.guru/)
+
 ## Getting Started:
 
 `npx live-server --port=3000 --entry-file=./index.html` or any other way of hosting root as static site
