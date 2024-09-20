@@ -50,3 +50,24 @@ The person.html file can then use the personId parameter like this:
 ```
 
 script tags also work
+
+## This site
+
+[index.html](index.html) has the routes and imports to js and css files.
+
+it links to the 3 route files that are loaded when needed.
+
+* [home.html](/_/routes/home.html)
+* [person.html](/_/routes/person.html)
+* [persons.html](/_/routes/persons.html)
+
+
+These implement some components
+
+Take [home.html](/_/routes/home.html) for example
+
+it implements the [person-details.html](/_/components/person-details.html) component and gives it personId`s.
+
+Routes and components can be nested.
+
+
