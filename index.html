@@ -21,14 +21,22 @@
   </nav>
   <main class="layout__main" style="width: 100%; min-height: 100vh">
     <a-route cache pattern="/" src="/assets/routes/home.html"></a-route>
-    <a-route cache pattern="/persons/" src="/assets/routes/persons.html"></a-route>
-    <a-route cache pattern="/persons/:personId/" src="/assets/routes/person.html"></a-route>
+    <a-route
+      cache
+      pattern="/persons/"
+      src="/assets/routes/persons.html"
+    ></a-route>
+    <a-route
+      cache
+      pattern="/persons/:personId/"
+      src="/assets/routes/person.html"
+    ></a-route>
   </main>
 </div>
 
 <link href="/assets/main.css" rel="stylesheet" />
 <script src="/assets/main.js"></script>
-<link href="/lib/Router.css" rel="stylesheet" />
-<script type="module" src="/lib/Router.js"></script>
+<link href="/assets/Router.css" rel="stylesheet" />
+<script type="module" src="/assets/Router.js"></script>
 
-<script type="module" src="/lib/Component.js"></script>
+<script type="module" src="/assets/Component.js"></script>
