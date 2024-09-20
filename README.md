@@ -51,6 +51,23 @@ The person.html file can then use the personId parameter like this:
 
 script tags also work
 
+
+### Simple components
+
+```html
+<a-component src="/assets/components/reusable.html" title="Hello, World" sub-title="This works." text="Some more props and stuff"></a-component>
+
+<div>
+  <a-component src="/assets/components/person-details.html" personId="1"></a-component>
+</div>
+
+<div>
+  <a-component src="/assets/components/person-details.html" personId="2"></a-component>
+</div>
+```
+
+Components can be nested, they can pass props to eachother and they rerender when props change.
+
 ## This site
 
 [index.html](index.html) has the routes and imports to js and css files.
