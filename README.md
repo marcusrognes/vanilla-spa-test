@@ -48,9 +48,7 @@ script tags also work
 
 ## This site
 
-`index.html` has the routes and imports to js and css files.
-
-[index.html](index.html)
+[index.html](index.html) has the routes and imports to js and css files.
 
 it links to the 3 route files that are loaded when needed.
 
