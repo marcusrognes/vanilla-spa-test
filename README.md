@@ -57,17 +57,14 @@ script tags also work
 
 it links to the 3 route files that are loaded when needed.
 
-* [home.html](/_/routes/home.html)
-* [person.html](/_/routes/person.html)
-* [persons.html](/_/routes/persons.html)
-
+- [home.html](/assets/routes/home.html)
+- [person.html](/assets/routes/person.html)
+- [persons.html](/assets/routes/persons.html)
 
 These implement some components
 
-Take [home.html](/_/routes/home.html) for example
+Take [home.html](/assets/routes/home.html) for example
 
-it implements the [person-details.html](/_/components/person-details.html) component and gives it personId`s.
+it implements the [person-details.html](/assets/components/person-details.html) component and gives it personId`s.
 
 Routes and components can be nested.
-
-
