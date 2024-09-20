@@ -32,7 +32,7 @@ The backbone of this test is the browsers buildt in `customElements.define("elem
 
 The a-route element is designed to fetch the file in src and apply any parameters found in the pattern
 
-For the "/persons/:personId/" route, this will load the "/\_/routes/person.html" file and replace any {{personId}} found within.
+For the "/persons/:personId/" route, this will load the "/assets/routes/person.html" file and replace any {{personId}} found within.
 
 The person.html file can then use the personId parameter like this:
 
