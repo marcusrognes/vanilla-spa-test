@@ -6,7 +6,7 @@
 
 ## How it functions
 
-This is designed to be a simple proof of concept, testing if one can recreate the simple routing and component workflows that make react so easy to use as a spa framework.
+This is designed to be a simple proof of concept, testing if one can recreate the simple routing and component workflows that make react so easy to use as an spa framework.
 
 There is no dependencies, and should run on all browsers
 
