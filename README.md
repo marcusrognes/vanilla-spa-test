@@ -16,12 +16,16 @@ The backbone of this test is the browsers buildt in `customElements.define("elem
 
 ```html
 <main>
-  <a-route cache pattern="/" src="/_/routes/home.html"></a-route>
-  <a-route cache pattern="/persons/" src="/_/routes/persons.html"></a-route>
+  <a-route cache pattern="/" src="/assets/routes/home.html"></a-route>
+  <a-route
+    cache
+    pattern="/persons/"
+    src="/assets/routes/persons.html"
+  ></a-route>
   <a-route
     cache
     pattern="/persons/:personId/"
-    src="/_/routes/person.html"
+    src="/assets/routes/person.html"
   ></a-route>
 </main>
 ```
@@ -31,6 +35,7 @@ The a-route element is designed to fetch the file in src and apply any parameter
 For the "/persons/:personId/" route, this will load the "/\_/routes/person.html" file and replace any {{personId}} found within.
 
 The person.html file can then use the personId parameter like this:
+
 `person.html`
 
 ```html
