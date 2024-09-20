@@ -1,38 +1,37 @@
-<style>
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-</style>
-<link href="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.css" rel="stylesheet" />
-<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.8/dist/cdn/beer.min.js"></script>
-<script type="module"
-  src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+<head>
+  <base href="/" target="_blank" />
+</head>
 
-<div style="display: flex; flex-direction: row;">
-  <nav class="drawer">
+<div class="flex">
+  <nav class="layout__menu">
     <header>
       <nav>
-        <h6>Test</h6>
+        <h2>Swapi pages</h2>
       </nav>
     </header>
-    <a href="/">
-      <i>inbox</i>
-      <span class="max">Home</span>
-    </a>
-    <a href="/another/">
-      <i>inbox</i>
-      <span class="max">Another</span>
-    </a>
+
+    <ul>
+      <li>
+        <a href="/"> Home </a>
+      </li>
+      <li>
+        <a href="/persons/"> Persons </a>
+      </li>
+    </ul>
   </nav>
-  <main style="width: 100%; min-height: 100vh;">
+  <main class="layout__main" style="width: 100%; min-height: 100vh">
     <a-route cache pattern="/" src="/_/routes/home.html"></a-route>
-    <a-route cache pattern="/another/" src="/_/routes/another.html"></a-route>
+    <a-route cache pattern="/persons/" src="/_/routes/persons.html"></a-route>
+    <a-route
+      cache
+      pattern="/persons/:personId/"
+      src="/_/routes/person.html"
+    ></a-route>
   </main>
 </div>
 
-
+<link href="/assets/main.css" rel="stylesheet" />
+<script src="/assets/main.js"></script>
 <link href="/lib/Router.css" rel="stylesheet" />
 <script type="module" src="/lib/Router.js"></script>
 

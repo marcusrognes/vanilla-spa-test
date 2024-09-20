@@ -1,0 +1,40 @@
+<header>
+  <nav>
+    <h1>Persons</h1>
+  </nav>
+</header>
+
+<div id="persons-list" class="flex flex-column"></div>
+
+<script type="module">
+  const personsList = document.getElementById("persons-list");
+  const loadMoreButton = document.createElement("button");
+  loadMoreButton.onclick = fetchData;
+  loadMoreButton.innerText = "Load more";
+
+  let nextUrl = "https://swapi.dev/api/people/";
+  async function fetchData() {
+    if (loadMoreButton.parentNode === personsList) {
+      personsList.removeChild(loadMoreButton);
+    }
+
+    const response = await fetch(nextUrl, {
+      cache: "force-cache",
+    });
+    const data = await response.json();
+
+    data.results.forEach((p) => {
+      const link = document.createElement("a");
+      link.innerText = p.name;
+      link.href = `/persons/${getIdFromUrl(p.url)}/`;
+      personsList.appendChild(link);
+    });
+
+    if (data.next) {
+      nextUrl = data.next;
+      personsList.appendChild(loadMoreButton);
+    }
+  }
+
+  fetchData();
+</script>
